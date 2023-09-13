@@ -1,15 +1,26 @@
 import React from 'react';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import RepositoriesExplorer from './pages/repositories-explorer';
 import reportWebVitals from './reportWebVitals';
+import i18n from 'i18next'
+import { initReactI18next } from 'react-i18next'
+import i18nConfig from './locales/i18next'
+
+i18n.use(initReactI18next).init(i18nConfig)
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+const queryClient = new QueryClient()
+
 root.render(
   <React.StrictMode>
-    <App />
+    <QueryClientProvider client={queryClient}>
+      <RepositoriesExplorer />
+    </QueryClientProvider>
   </React.StrictMode>
 );
 

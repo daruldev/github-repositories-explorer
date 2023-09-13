@@ -1,0 +1,29 @@
+{
+  "config": {
+    "active_language": "id",
+    "language_text": "Indonesia"
+  },
+  "pages":{
+    "repositories_explorer": {
+      "header": {
+        "title": "Penjelajah Repositori GitHub",
+        "description": "GitHub Repositories Explorer adalah aplikasi web intuitif dan kaya fitur yang dirancang untuk pengembang, peneliti, dan siapa pun yang tertarik untuk menemukan dan melacak repositori GitHub. Dengan antarmuka yang ramah pengguna dan fungsionalitas yang kuat, ini menyederhanakan proses menemukan, mengevaluasi, dan berkolaborasi dalam proyek sumber terbuka."
+      },
+      "body":{
+        "gitHub_username": "GitHub Username",
+        "not_found":"tidak ditemukan."
+      }
+    }
+  },
+  "components": {
+    "accordion": {
+      "body": {
+        "repos_no_data": "Akun tersebut belum memiliki repositori untuk dibagikan secara publik."
+      }
+    },
+    "search":{
+      "search_text": "Cari",
+      "search_placeholder": "Masukan Username GitHub..."
+    }
+  }
+}
